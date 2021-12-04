@@ -130,6 +130,7 @@ app.prepare().then(async () => {
 
    async function injectSession(ctx, next) {
     const session = await Shopify.Utils.loadCurrentSession(ctx.req, ctx.res) || loadCallback();
+    console.log(session)
     ctx.sesionFromToken = session;
     if (session?.shop && session?.accessToken) {
       const client = new Shopify.Clients.Rest(
