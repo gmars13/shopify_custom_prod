@@ -1,5 +1,5 @@
 import { DataType } from '@shopify/shopify-api';
-import Shopify, {context} from '@lib/shopify'
+// import Shopify, {context} from '@lib/shopify'
 
 export default async () => {
     // const params = {
