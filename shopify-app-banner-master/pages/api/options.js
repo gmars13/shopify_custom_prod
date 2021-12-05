@@ -1,7 +1,7 @@
 import { DataType } from '@shopify/shopify-api';
 import Shopify, {context} from '@lib/shopify'
 
-function options (){
+export default async () => {
     // const params = {
     //     "product": {
     //         "title":"Custom product",
@@ -22,4 +22,8 @@ function options (){
     // res.json(data)
     res.json("Hellos")
 }
-export default options;
+export const config = {
+    api: {
+      bodyParser: false,
+    },
+}
