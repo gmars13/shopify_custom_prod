@@ -1,7 +1,7 @@
 import { DataType } from '@shopify/shopify-api';
 // import Shopify, {context} from '@lib/shopify'
 
-export default async () => {
+export default async (req, res) => {
     // const params = {
     //     "product": {
     //         "title":"Custom product",
