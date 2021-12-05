@@ -20,5 +20,5 @@ export default async () => {
     // });
 
     // res.json(data)
-    res.json("Hello")
+    res.json("Hellos")
 }
