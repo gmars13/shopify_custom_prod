@@ -7,8 +7,9 @@
     "dev": "cross-env NODE_ENV=development nodemon ./server/index.js --watch ./server/index.js",
     "dev:next": "next dev",
     "prebuild": "next telemetry disable",
-    "build": "next build",
-    "start": "node ./server/server.js"
+    "build": "next build",  
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
